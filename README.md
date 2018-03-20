@@ -6,10 +6,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;同时，Ginkgo Pagination 也提供了返回JSON格式的分页栏数据，让使用者自己实现分页栏样式。
 
 # 预览
-&nbsp;&nbsp;&nbsp;&nbsp;默认分页栏样式<br>
+## &nbsp;&nbsp;&nbsp;&nbsp;默认分页栏样式<br>
 ![image](https://raw.githubusercontent.com/georgeworld/georgeworld.github.com/master/ginkgo/pagination/img/pagination-bar-default.png)<br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Bootstrap风格的分页栏样式<br>
+## &nbsp;&nbsp;&nbsp;&nbsp;Bootstrap风格的分页栏样式<br>
 ![image](https://raw.githubusercontent.com/georgeworld/georgeworld.github.com/master/ginkgo/pagination/img/pagination-bar-json-bootstrap.png)<br>
 
 # 参与及讨论
