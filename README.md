@@ -24,7 +24,7 @@
 >//执行下面的doPaging(...);方法时，JDBC分页功能模块，已经把分页上下文对象，存入的HttpServletRequest 的Attribute属性中，key是：**pagingContext**<br>
 >List<BlogArticle> dataList = pagingService.doPaging(this.getRequest(), pagingContext, BlogArticle.class);<br>
 
->//dataList是你在视图层便利的数据集列表对象
+>//dataList是你在视图层便利的数据集列表对象<br>
 >request.setAttribute("dataList", dataList);<br>
 
 ## jsp页面部分
@@ -48,7 +48,11 @@ $(function (){
     
 });
 
+**你完全可以自己实现**<br>
+>com.georgeinfo.pagination.context.GenericPagingContext <br>
 
+接口，自己来实现Ginkgo Pagination组件的服务端对象提供机制，不必依赖[Ginkgo-JDBC框架](https://github.com/georgeworld/ginkgo-jdbc)，或者Ginkgo-SpringJDBC(稍后开源)框架。
+    
 # 参与及讨论
   &nbsp;&nbsp;&nbsp;&nbsp;欢迎加入《互联网软件之家》QQ群：[693203950](//shang.qq.com/wpa/qunwpa?idkey=61c4589ea5618ae46d063f94cbd9394de290dd39ef46fca059a4309b8c1d7874)<br>  
   ![image](https://raw.githubusercontent.com/georgeworld/georgeworld.github.com/master/gstudio/res/img/qq_group.png) <br> 
