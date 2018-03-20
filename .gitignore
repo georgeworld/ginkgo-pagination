@@ -1,0 +1,7 @@
+target
+nbactions.xml
+.idea
+out
+*.bat
+*.sh
+*.iml
