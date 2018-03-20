@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <description>Ginkgo 分页标签</description>
+
+    <display-name>"Ginkgo Pagination Kit Tags"</display-name>
+    <tlib-version>1.0</tlib-version>
+    <short-name>si</short-name>
+    <!-- 定义该标签库的URI -->
+    <uri>http://georgeinfo.com/paginationframework/tags</uri>
+
+    <!-- 定义分页栏 标签 开始 -->
+    <!-- 普通Html分页栏 -->
+    <tag>
+        <!-- 标签描述 -->
+        <description>
+            <![CDATA[ 乔治JDBC分页栏标签 ]]>
+        </description>
+        <!-- 定义标签名 -->
+        <name>paging</name>
+        <!-- 定义标签处理类 -->
+        <tag-class>com.georgeinfo.pagination.tags.jsp.PaginationTag</tag-class>
+        <!-- 定义标签体为空 -->
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>data</name>
+            <required>true</required>
+            <fragment>true</fragment>
+        </attribute>
+
+        <attribute>
+            <name>cssClass</name>
+            <required>false</required>
+            <fragment>false</fragment>
+        </attribute>
+
+        <attribute>
+            <name>htmlFormTag</name>
+            <required>false</required>
+            <fragment>false</fragment>
+        </attribute>
+    </tag>
+
+    <!-- Json分页栏 -->
+    <tag>
+        <!-- 标签描述 -->
+        <description><![CDATA[ 乔治Json-JDBC分页栏标签 ]]>
+        </description>
+        <!-- 定义标签名:jpb = Json Paging Bar -->
+        <name>jpb</name>
+        <!-- 定义标签处理类 -->
+        <tag-class>com.georgeinfo.pagination.tags.jsp.JsonPaginationTag</tag-class>
+        <!-- 定义标签体为空 -->
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>data</name>
+            <required>true</required>
+            <fragment>true</fragment>
+        </attribute>
+
+        <attribute>
+            <name>varName</name>
+            <required>false</required>
+            <fragment>true</fragment>
+        </attribute>
+
+        <attribute>
+            <name>renderer</name><!-- 渲染器：目前支持的值：bootstrap -->
+            <required>false</required>
+            <fragment>true</fragment><!-- 设置该属性是否支持JSP脚本、表达式等动态内容，取值为true或false -->
+        </attribute>
+    </tag>
+
+    <!-- Json解析执行器调用标签 -->
+    <tag>
+        <!-- 标签描述 -->
+        <description><![CDATA[ 乔治Json-JDBC-解析分页栏标签 ]]>
+        </description>
+        <!-- 定义标签名:jpb = Json Paging Bar -->
+        <name>jpbdo</name>
+        <!-- 定义标签处理类 -->
+        <tag-class>com.georgeinfo.pagination.tags.jsp.JsonActuatorTag</tag-class>
+        <!-- 定义标签体为空 -->
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>varName</name>
+            <required>false</required>
+            <fragment>true</fragment>
+        </attribute>
+    </tag>
+    <!-- 定义分页栏 标签 结束 -->
+
+</taglib>
