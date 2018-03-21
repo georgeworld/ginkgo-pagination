@@ -2,8 +2,9 @@
 ## 银杏树分页标签库
 ![image](https://raw.githubusercontent.com/georgeworld/georgeworld.github.com/master/ginkgo/pagination/img/GinkgoPagination-logo.png)<br>  
 
-&nbsp;&nbsp;&nbsp;&nbsp;这是一个分页标签库，[老乔](http://www.georgeinfo.com)创建于2013年。使用JSP标签的方式，实现了方便快捷地分页功能，内置提供了简单样式分页栏、bootstrap样式分页栏两种内置分页栏样式。
-&nbsp;&nbsp;&nbsp;&nbsp;同时，Ginkgo Pagination 也提供了返回JSON格式的分页栏数据，让使用者自己实现分页栏样式。
+&nbsp;&nbsp;&nbsp;&nbsp;这是一个分页标签库，[老乔](http://www.georgeinfo.com)创建于2013年。使用JSP标签的方式，实现了方便快捷地分页功能，内置提供了简单样式分页栏、bootstrap样式分页栏两种内置分页栏样式。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;同时，Ginkgo Pagination 也提供了返回JSON格式的分页栏数据，让使用者自己实现分页栏样式。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;现在直接使用jsp作为前端视图层模板的项目不多了（现在流行用react/vue做前端，后端提供json），我这个也是多年前做的一个小组件，现在开源出来，给仍然使用jsp作为模板的有缘人，或许能提供一些帮助。
 
 # 预览
 ## &nbsp;&nbsp;&nbsp;&nbsp;默认分页栏样式<br>
