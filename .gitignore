@@ -5,3 +5,6 @@ out
 *.bat
 *.sh
 *.iml
+.settings
+.classpath
+.project

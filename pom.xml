@@ -69,6 +69,7 @@
 
 
     <build>
+        <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -106,6 +107,7 @@
             </plugin>
             <!-- 生成jar相关的插件 结束（主要是为了生成带有main方法的可执行jar，否则不需要配置这些插件） -->
         </plugins>
+        </pluginManagement>
 
         <!-- 让maven可以编译静态配置文件 开始 -->
         <resources>
@@ -126,5 +128,7 @@
             </resource -->
         </resources>
         <!-- 让maven可以编译静态配置文件 结束 -->
+
+        <defaultGoal>compile</defaultGoal>
     </build>
 </project>
